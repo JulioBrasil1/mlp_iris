@@ -1,5 +1,4 @@
 # mlp_iris
-
 Tarefa 2 dos Estudos LIT
 
 Comecei e terminei o código mlp. Tive problemas em resultados ao olhar a matriz de confusão, pois, as extremidades tinham uma porcentagem muito alta, mostrando que o aprendizado estava tendo problemas ou apenas resultando errado. Tentei alterar max_iter e learning_rate_init, mas não resolveram. Descobri o early_stopping, o que ajudou um pouco, mas ainda não era o suficiente, então adotei duas medidas -scaler = StandardScaler()- e -alpha=0.0001- resultando em dados muito mais precisos, daí ajustei max_inter e learning_rate_init para valores altos que não consumissem muito e obtive os bons resultados. O StandardScaler para normalizar os dados, assim facilitando identificar de forma mais correta e convergindo mais rápido e alpha para controlar o grau de penalização nas atualizações dos pesos da rede neural, não entendi completamente como ele funciona, como se fosse um limitador de erro baseado em um cálculo, como estou usando 10000 iterações, esse valor acaba não sendo tão baixo.
